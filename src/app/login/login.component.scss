@@ -1,13 +1,36 @@
+.page-container{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: calc(100vh - 120px);
+
+    justify-content: center;
+}
+
 .form-login-container{
-    margin-top: 150px;
+    
     text-align: center;
 }
 
+.input-container{
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 400px;
+}
+
 h2{
+
+    margin-bottom: 20px;
+    
     color: #384A6D;
+
 }
 
 p{
+
     color: #90B0AF;
+
 }
 
