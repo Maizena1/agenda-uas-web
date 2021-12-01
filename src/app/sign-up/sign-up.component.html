@@ -1,0 +1,75 @@
+<app-header></app-header>
+
+<div class="page-signUp-container">
+    <div class="form-signUp-container">
+        <h2>Agenda tu cita con nosotros</h2>
+
+        <div class="grid">
+
+            <div>
+                <h5 class="label-personal-container">Datos personales</h5>
+                <div class="input-personal-container">
+                    <app-textbox [props]="{placeholder : 'Nombre', class : ''}"></app-textbox>
+                    <app-textbox [props]="{placeholder : 'Apellido 1', class : ''}"></app-textbox>
+                    <app-textbox [props]="{placeholder : 'Apellido 2', class : ''}"></app-textbox>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="label-contact-container">Contacto</h5>
+                <div class="input-contact-container">
+                    <app-textbox [props]="{placeholder : 'ejemploemail@gmail.com', class : ''}"></app-textbox>
+                </div>
+            </div>
+
+            <div>
+                <div class="label-academic-container">
+                    <h5>Datos escolares</h5>
+                    <p class="warning-label">*Si no eres estudiante estos datos no son requeridos</p>
+                </div>
+            </div>
+
+            <div class="grid-rb-academic-container">
+                <div class="rb-academic-container">
+                    <div>
+                        <p>¿Eres estudiante?</p>
+                    </div>
+
+                    <div class="rb-container">
+                        <label for="huey">Sí</label>
+                        <input type="radio" id="huey" name="drone" value="huey" checked>
+                        <label for="huey" class="label-rb-no">No</label>
+                        <input type="radio" id="huey" name="drone" value="huey" checked>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-input-academic-container">
+                <div class="input-academic-container">
+                    <app-textbox [props]="{placeholder : 'Carrera', class : ''}"></app-textbox>
+                    <app-textbox [props]="{placeholder : 'No. Matrícula', class : ''}"></app-textbox>
+                </div>
+            </div>
+
+            <div class="grid-input-personal-container">
+                <div class="input-personalcitar-container">
+                    <app-textbox [props]="{placeholder : 'Personal a citar', class : ''}"></app-textbox>
+                </div>
+            </div>
+
+            <div class="grid-textarea-container">
+                <div class="textarea-container">
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Razones para petición de cita" rows="5" ></textarea>
+                </div>
+            </div>
+
+            <div class="grid-button-container">
+                <div class="button-container">
+                    <app-input-button [props]="{value : 'Agendar', class : 'form-button'}"></app-input-button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,47 @@
+h2{
+    color: #384A6D;;
+}
+
+.page-date-container{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    margin-top: 40px;
+
+    justify-content: center;
+}
+
+.grid{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:300px;
+    
+}
+
+.mydate-container{
+    display: flex;
+    gap: 16px;
+    height: 50px;
+    p{
+        font-size: 24px;
+        color: #5A5454;
+    }
+    img{
+        height: 100%;
+    }
+}
+
+.status-container{
+    display: flex;
+    gap: 16px;
+    height: 50px;
+    p{
+        font-size: 24px;
+        color: #5A5454;
+    }
+    img{
+        height: 100%;
+    }
+}

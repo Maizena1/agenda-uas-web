@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="page-date-container">
+    <div class="form-date-container">
+        <h2>Administrador</h2>
+        <div class="grid">
+
+            <div class="mydate-container">
+                <img src="../../assets/image/Calendar_Icon.svg">
+                <p>Mis citas</p>
+                
+            </div>
+            
+            <div class="status-container">
+                <img src="../../assets/image/Without_Status_Icon.svg">
+                <p>Sin status</p>
+            </div>
+
+            <app-dates (onClick)="handleClick()"></app-dates>
+            
+            
+        </div>
+    </div>
+</div>
