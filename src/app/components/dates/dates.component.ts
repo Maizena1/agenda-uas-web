@@ -17,12 +17,6 @@ export class DatesComponent implements OnInit {
     this.onClick.emit()
   }
 
-  aceptado(){
-    console.log("aceptado")
-  }
 
-  rechazado(){
-    console.log("rechazado")
-  }
 
 }
