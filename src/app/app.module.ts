@@ -8,9 +8,9 @@ import { TextboxComponent } from './components/textbox/textbox.component';
 import { LoginComponent } from './login/login.component';
 import { InputButtonComponent } from './components/input-button/input-button.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { DateComponent } from './date/date.component';
+import { DateComponent } from './dates/dates.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DatesComponent } from './components/dates/dates.component';
+import { DatesComponent } from './components/date/date.component';
 import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
@@ -33,4 +33,6 @@ import { ModalComponent } from './components/modal/modal.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ 
+ }

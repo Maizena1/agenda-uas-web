@@ -1,0 +1,102 @@
+.modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+body{
+    height: 100%;
+}
+
+.input-time-container{
+    display: flex;
+}
+
+.margin-left{
+    margin-left: 12px;
+}
+
+.warning-label{
+    vertical-align: middle;
+
+    color: #90B0AF;
+}
+
+.acept-decline-button-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image-time-icon{
+    margin-top:6px;
+    width: 28px;
+    height: 28px;
+    
+    align-content: center;
+}
+
+.form-control{
+    width:120px;
+}
+
+.modal-container{
+    width: 450px;
+    height: auto;
+   
+    
+    border-radius: 20px;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.acept{
+    margin-right: 12px;
+}
+
+.out-button-container{
+    display: flex;
+    justify-content: flex-end
+}
+
+
+
+.header{
+    font-size: 24px;
+    color: #384A6D;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+.modal-content-style{
+    padding: 20px 40px;
+    text-align: justify;
+    
+}
+
+p{
+    color: #807A7A;
+}
+
+button{
+    margin-right: 8px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 20px;
+}
+
+img{
+    width: 16px;
+    height: 16px;
+
+}
+
