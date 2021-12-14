@@ -1,4 +1,7 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
+export type ModalType = "readOnly" | "all-actions" | "confirm-hour-action";
+
 
 @Component({
   selector: 'app-modal',
@@ -7,7 +10,8 @@ import { Component, OnInit, Output } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
-  CloseModal:boolean = true;
+  @Input() modalType: ModalType = 'readOnly';
+  @Output() onClose = new EventEmitter();
   
   constructor() { }
 
@@ -16,7 +20,7 @@ export class ModalComponent implements OnInit {
   }
 
   HandleCloseModal(){
-    this.CloseModal = false;
+    this.onClose.emit();
   }
   
  

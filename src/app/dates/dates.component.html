@@ -1,4 +1,5 @@
-<app-modal *ngIf="IsOpenModal" ></app-modal>
+<app-modal *ngIf="isOpenModal" (onClose)="handleCloseModal()"></app-modal>
+
 <app-header></app-header>
 
 <div class="page-date-container">
@@ -17,7 +18,7 @@
                 <p>Sin status</p>
                 
             </div>
-            <app-date (onClickUser)="handleModalState($event)"></app-date>
+            <app-date (onClickUser)="handleCheckDate()"></app-date>
             
 
             

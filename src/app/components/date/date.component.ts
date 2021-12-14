@@ -7,7 +7,6 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class DatesComponent implements OnInit {
 
-  condition:boolean = true;
   
   
   @Output() onClickUser = new EventEmitter();
@@ -20,11 +19,11 @@ export class DatesComponent implements OnInit {
   }
 
   handleClickUser(){
-    this.onClickUser.emit(this.condition);
+    this.onClickUser.emit();
   }
 
   handleClickAccept(){
-    this.onAccept.emit(this.condition)
+    this.onAccept.emit()
   }
 
   handleDelete(){

@@ -8,16 +8,28 @@ import { Component, OnInit} from '@angular/core';
 })
 export class DateComponent implements OnInit {
 
-  IsOpenModal:boolean = false;
+  isOpenModal:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  handleModalState(value: boolean){
-    this.IsOpenModal = value;
-  } 
+  handleCheckDate(){
+    this.isOpenModal = true;
+  }
+
+  handleAcceptDate(){
+    this.isOpenModal = true;
+  }
+
+  handleCloseModal(){
+    this.isOpenModal = false;
+  }
+
+  handleDeleteDate(){
+
+  }
 
 
 
