@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
+  CloseModal:boolean = true;
+  
   constructor() { }
 
   ngOnInit(): void {
+    
   }
+
+  HandleCloseModal(){
+    this.CloseModal = false;
+  }
+  
+ 
 
 }

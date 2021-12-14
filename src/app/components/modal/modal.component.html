@@ -1,13 +1,49 @@
-
-  <div class="page-container">
-    <div class="modal-container">
-      <div class="out-button-container">
-        <button class="out-button"> <img src="../../../assets/image/x.svg"></button>
+<div class="modal" *ngIf="CloseModal">
+  <div class="modal-container">
+    <div class="out-button-container">
+      <button class="out-button"> <img src="../../../assets/image/x.svg" (click)="HandleCloseModal()"></button>
+    </div>
+    <div class="content">
+      <p class="header">Información de la cita</p>
+      <div class="modal-info modal-content-style" *ngIf="false">
+        <p>Solicitante: Leonardo Leyva Maro</p>
+        <p>Matricula: 18104304</p>
+        <p>Carrera: Ingeniería de Software</p>
+        <p>Correo: leoshield9@gmail.com</p>
+        <p>Responsable: Ramcés</p>
+        <p>Razones de la cita: Solicito esta cita para 
+        poder hacer consulta de todo el procedimiento acerca de 
+        nuestro servicio socialcomoestduiantes y como afectará 
+        a nuestroproceso de titulación.</p>
       </div>
-      <div class="content">
-        <p>Información de la cita</p>
+      <div class="modal-time modal-content-style">
+        <div class="text-content-container" *ngIf="true">
+          <p>Responsable: Ramcés</p>
+          <p>Razones de la cita: Solicito esta cita para poder hacer consulta de 
+            todo el procedimiento acerca de nuestro servicio social 
+            como estduiantes y como afectará a nuestro proceso de titulación.
+          </p>
+        </div>
+
+      <div class="input-time-container-enable/desable" *ngIf="true">
+        <div class="input-time-container">
+          <img src="../../../assets/image/Time_Icon.svg" class="image-time-icon">
+          <input type="time" id="inputMDEx1" class="form-control margin-left">
+          <p class="margin-left warning-label">*Confirma la hora de la cita</p>
+        </div>
+        <div class="acept-decline-button-container">
+          <div class="acept">
+            <app-input-button [props]="{value : 'Aceptar', class : 'form-button'}"></app-input-button>
+          </div>      
+          <div class="decline">
+            <app-input-button [props]="{value : 'Rechazar', class : 'form-button'}"></app-input-button>
+          </div>
+        </div>
+      </div>
+
       </div>
     </div>
   </div>
+</div>
 
 
